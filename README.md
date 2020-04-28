@@ -4,6 +4,39 @@ Alternative provider, css, templates and fonts for the default weather module
 ### Example
 ![Example of weather in color output](images/screenshot.png?raw=true "Example screenshot")
 
+
+## Using the module
+
+### MagicMirror² Configuration
+
+To use this module, add the following configuration block to the modules array in the `config/config.js` file:
+```js
+
+		{
+			module: "weather",
+			position: "top_left",
+			config: {
+				type: "current",
+				weatherProvider: "ukmetoffice_incolor",
+				apiBase: "http://datapoint.metoffice.gov.uk/public/data/val/wxfcs/all/json/",
+				locationID: 350153, //Ascot
+				apiKey: "----",
+			}
+		},
+		{
+			module: "weather",
+			position: "top_left",
+			config: {
+				type: "forecast",
+				weatherProvider: "ukmetoffice_incolor",
+				apiBase: "http://datapoint.metoffice.gov.uk/public/data/val/wxfcs/all/json/",
+				locationID: 350153, //Ascot
+				apiKey: "----",
+			}
+		},
+```
+
+
 use the included script to replace the standard files with these alternative ones after cloning this repository into the modules folder
 
 ```
