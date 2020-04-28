@@ -7,9 +7,11 @@
  * MIT Licensed.
  *
  * This class is a provider for UK Met Office Datapoint.
+ * alternative version supports coloured icons
+ *
  */
 
-ColorWeatherProvider.register("ukmetoffice_incolor", {
+WeatherProvider.register("ukmetoffice_incolor", {
 
 	// Set the name of the provider.
 	// This isn't strictly necessary, since it will fallback to the provider identifier
@@ -80,7 +82,7 @@ ColorWeatherProvider.register("ukmetoffice_incolor", {
 	 * Generate a WeatherObject based on currentWeatherInformation
 	 */
 	generateWeatherObjectFromCurrentWeather(currentWeatherData) {
-		const currentWeather = new ColorWeatherObject(this.config.units, this.config.tempUnits, this.config.windUnits);
+		const currentWeather = new WeatherObject(this.config.units, this.config.tempUnits, this.config.windUnits);
 
 		// data times are always UTC
 		let nowUtc = moment.utc()
@@ -137,7 +139,7 @@ ColorWeatherProvider.register("ukmetoffice_incolor", {
 		// loop round the (5) periods getting the data
 		// for each period array, Day is [0], Night is [1]
 		for (j in forecasts.SiteRep.DV.Location.Period) {
-			const weather = new ColorWeatherObject(this.config.units, this.config.tempUnits, this.config.windUnits);
+			const weather = new WeatherObject(this.config.units, this.config.tempUnits, this.config.windUnits);
 
 			// data times are always UTC
 			dateStr = forecasts.SiteRep.DV.Location.Period[j].value
