@@ -1,6 +1,9 @@
 # MMM-weather-in-color
 Alternative provider, css, templates and fonts for the default weather module
 
+### Example
+![Example of weather in color output](images/screenshot.png?raw=true "Example screenshot")
+
 use the included script to replace the standard files with these alternative ones after cloning this repository into the modules folder
 
 ```
