@@ -19,8 +19,11 @@ cp fonts/* ../default/weather/fonts/.
 
 #
 #replace templates (backup first)
+#rename backup files
 
-cp ../default/weather/*.njk /*.njk.backup
+cp ../default/weather/*.njk .
+mv current.njk current.njk.backup
+mv forecast.njk forecast.njk.backup
 
 cp -f current_incolor.njk ../default/weather/current.njk 
 cp -f forecast_incolor.njk ../default/weather/forecast.njk
