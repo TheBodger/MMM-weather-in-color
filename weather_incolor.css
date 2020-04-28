@@ -184,11 +184,11 @@
 
 @font-face {
     font-family: "iconvault";
-    src: url("ForecastFontDownload/iconvault_forecastfont.eot");
-    src: url("ForecastFontDownload/iconvault_forecastfont.eot?#iefix") format("embedded-opentype"), 
-    url("ForecastFontDownload/iconvault_forecastfont.woff") format("woff"), 
-    url("ForecastFontDownload/iconvault_forecastfont.ttf") format("truetype"), 
-    url("ForecastFontDownload/iconvault_forecastfont.svg#iconvault") format("svg");
+    src: url("fonts/iconvault_forecastfont.eot");
+    src: url("fonts/iconvault_forecastfont.eot?#iefix") format("embedded-opentype"), 
+    url("fonts/iconvault_forecastfont.woff") format("woff"), 
+    url("fonts/iconvault_forecastfont.ttf") format("truetype"), 
+    url("fonts/iconvault_forecastfont.svg#iconvault") format("svg");
     font-weight: normal;
     font-style: normal;
 }
