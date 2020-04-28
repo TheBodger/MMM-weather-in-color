@@ -63,4 +63,6 @@ see the md files in the folders added when cloned.
 
 if the install script is run more than once the original backup files will be overwritten
 
+because this replaces the default templates, when installed, the original black and white layouts will not show any icons.
+
 thanks to: https://webdesignbestfirm.com/forecastfont.html / rezith@ukr.net
