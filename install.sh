@@ -21,7 +21,7 @@ cp fonts/* ../default/weather/fonts/.
 #replace templates (backup first)
 #rename backup files
 
-cp ../default/weather/*.njk .
+cp -b -S ignore ../default/weather/*.njk .
 mv current.njk current.njk.backup
 mv forecast.njk forecast.njk.backup
 
@@ -31,7 +31,7 @@ cp -f forecast_incolor.njk ../default/weather/forecast.njk
 #
 #replace the css (backup first
 
-cp ../default/weather/*.css .
+cp -b -S ignore ../default/weather/*.css .
 mv weather.css weather.css.backup
 
 cp -f weather_incolor.css ../default/weather/weather.css 
