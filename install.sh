@@ -6,7 +6,7 @@
 #
 # add new provider (no backup)
 
-cp /providers/ukmetoffice_incolor.js ../default/weather/providers/.
+cp providers/ukmetoffice_incolor.js ../default/weather/providers/.
 
 #
 # add new fonts folder (no backup)
