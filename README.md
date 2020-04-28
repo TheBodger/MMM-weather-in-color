@@ -61,4 +61,6 @@ the icons included do not have a working night icon at the moment, so some weath
 
 see the md files in the folders added when cloned.
 
+if the install script is run more than once the original backup files will be overwritten
+
 thanks to: https://webdesignbestfirm.com/forecastfont.html / rezith@ukr.net
